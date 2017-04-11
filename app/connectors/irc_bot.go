@@ -3,10 +3,10 @@ package connectors
 import (
 	"regexp"
 
-	"github.com/etcinit/gonduit"
-	"github.com/etcinit/phabulous/app/interfaces"
-	"github.com/etcinit/phabulous/app/messages"
-	"github.com/etcinit/phabulous/app/modules"
+	"github.com/seamlessdocsdev/gonduit"
+	"github.com/seamlessdocsdev/phabulous/app/interfaces"
+	"github.com/seamlessdocsdev/phabulous/app/messages"
+	"github.com/seamlessdocsdev/phabulous/app/modules"
 	"github.com/fluffle/goirc/client"
 	"github.com/jacobstr/confer"
 )

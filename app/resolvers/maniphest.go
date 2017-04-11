@@ -1,8 +1,8 @@
 package resolvers
 
 import (
-	"github.com/etcinit/gonduit/requests"
-	"github.com/etcinit/phabulous/app/factories"
+	"github.com/seamlessdocsdev/gonduit/requests"
+	"github.com/seamlessdocsdev/phabulous/app/factories"
 	"github.com/jacobstr/confer"
 )
 

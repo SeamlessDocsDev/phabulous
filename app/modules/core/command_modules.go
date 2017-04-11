@@ -3,8 +3,8 @@ package core
 import (
 	"fmt"
 
-	"github.com/etcinit/phabulous/app/interfaces"
-	"github.com/etcinit/phabulous/app/messages"
+	"github.com/seamlessdocsdev/phabulous/app/interfaces"
+	"github.com/seamlessdocsdev/phabulous/app/messages"
 )
 
 // ModulesCommand allows one to send test messages to the feed channel.

@@ -3,8 +3,8 @@ package core
 import (
 	"fmt"
 
-	"github.com/etcinit/phabulous/app/interfaces"
-	"github.com/etcinit/phabulous/app/messages"
+	"github.com/seamlessdocsdev/phabulous/app/interfaces"
+	"github.com/seamlessdocsdev/phabulous/app/messages"
 )
 
 // LookupCommand allows users to lookup objects from Phabricator.

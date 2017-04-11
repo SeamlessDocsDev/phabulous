@@ -1,7 +1,7 @@
 package interfaces
 
 import (
-	"github.com/etcinit/gonduit"
+	"github.com/seamlessdocsdev/gonduit"
 	"github.com/jacobstr/confer"
 	"github.com/nlopes/slack"
 )

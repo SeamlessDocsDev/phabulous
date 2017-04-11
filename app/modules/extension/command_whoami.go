@@ -3,11 +3,11 @@ package extension
 import (
 	"fmt"
 
-	gonduitRequests "github.com/etcinit/gonduit/requests"
-	"github.com/etcinit/phabulous/app/gonduit/extensions"
-	"github.com/etcinit/phabulous/app/gonduit/extensions/requests"
-	"github.com/etcinit/phabulous/app/interfaces"
-	"github.com/etcinit/phabulous/app/messages"
+	gonduitRequests "github.com/seamlessdocsdev/gonduit/requests"
+	"github.com/seamlessdocsdev/phabulous/app/gonduit/extensions"
+	"github.com/seamlessdocsdev/phabulous/app/gonduit/extensions/requests"
+	"github.com/seamlessdocsdev/phabulous/app/interfaces"
+	"github.com/seamlessdocsdev/phabulous/app/messages"
 )
 
 // WhoamiCommand allows one to send test messages to the feed channel.

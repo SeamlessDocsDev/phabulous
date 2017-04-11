@@ -1,6 +1,6 @@
 package dev
 
-import "github.com/etcinit/phabulous/app/interfaces"
+import "github.com/seamlessdocsdev/phabulous/app/interfaces"
 
 // Module provides development/debugging commands.
 type Module struct{}

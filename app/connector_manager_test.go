@@ -4,10 +4,10 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/etcinit/phabulous/app"
-	"github.com/etcinit/phabulous/app/interfaces"
-	"github.com/etcinit/phabulous/app/messages"
-	"github.com/etcinit/phabulous/app/testing/mocks"
+	"github.com/seamlessdocsdev/phabulous/app"
+	"github.com/seamlessdocsdev/phabulous/app/interfaces"
+	"github.com/seamlessdocsdev/phabulous/app/messages"
+	"github.com/seamlessdocsdev/phabulous/app/testing/mocks"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
 )

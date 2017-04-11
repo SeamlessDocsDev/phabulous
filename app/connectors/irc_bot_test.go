@@ -3,8 +3,8 @@ package connectors
 import (
 	"testing"
 
-	"github.com/etcinit/phabulous/app/interfaces"
-	"github.com/etcinit/phabulous/app/modules/core"
+	"github.com/seamlessdocsdev/phabulous/app/interfaces"
+	"github.com/seamlessdocsdev/phabulous/app/modules/core"
 	"github.com/fluffle/goirc/client"
 	"github.com/jacobstr/confer"
 	"github.com/stretchr/testify/assert"

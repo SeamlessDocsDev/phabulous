@@ -3,9 +3,9 @@ package core
 import (
 	"fmt"
 
-	"github.com/etcinit/gonduit/requests"
-	"github.com/etcinit/phabulous/app/interfaces"
-	"github.com/etcinit/phabulous/app/messages"
+	"github.com/seamlessdocsdev/gonduit/requests"
+	"github.com/seamlessdocsdev/phabulous/app/interfaces"
+	"github.com/seamlessdocsdev/phabulous/app/messages"
 )
 
 // MemeCommand allows users to create memes.

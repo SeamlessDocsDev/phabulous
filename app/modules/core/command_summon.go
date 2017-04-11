@@ -5,15 +5,15 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/etcinit/gonduit"
-	"github.com/etcinit/gonduit/entities"
-	"github.com/etcinit/gonduit/requests"
-	"github.com/etcinit/phabulous/app/connectors/utilities"
-	"github.com/etcinit/phabulous/app/gonduit/extensions"
-	phabulousRequests "github.com/etcinit/phabulous/app/gonduit/extensions/requests"
-	"github.com/etcinit/phabulous/app/gonduit/extensions/responses"
-	"github.com/etcinit/phabulous/app/interfaces"
-	"github.com/etcinit/phabulous/app/messages"
+	"github.com/seamlessdocsdev/gonduit"
+	"github.com/seamlessdocsdev/gonduit/entities"
+	"github.com/seamlessdocsdev/gonduit/requests"
+	"github.com/seamlessdocsdev/phabulous/app/connectors/utilities"
+	"github.com/seamlessdocsdev/phabulous/app/gonduit/extensions"
+	phabulousRequests "github.com/seamlessdocsdev/phabulous/app/gonduit/extensions/requests"
+	"github.com/seamlessdocsdev/phabulous/app/gonduit/extensions/responses"
+	"github.com/seamlessdocsdev/phabulous/app/interfaces"
+	"github.com/seamlessdocsdev/phabulous/app/messages"
 	"github.com/nlopes/slack"
 )
 
@@ -205,8 +205,15 @@ func (c *SummonCommand) getReviewerPHIDs(
 
 	// We query all PHIDs in batch to avoid spamming the Phabricator server with
 	// individual requests.
+
+	// First things first: conn.PHIDQuery expects a string, so lets make one.
+	reviewerPHIDs := make([]string, 0, len(revision.Reviewers))
+	for k := range revision.Reviewers {
+		reviewerPHIDs = append(reviewerPHIDs, k)
+	}
+
 	allRes, err := conn.PHIDQuery(requests.PHIDQueryRequest{
-		PHIDs: revision.Reviewers,
+		PHIDs: reviewerPHIDs,
 	})
 
 	if err != nil {
@@ -293,13 +300,19 @@ func (c *SummonCommand) lookupSlackMap(
 	var slackUsers []slack.User
 	var err error
 
+	// Grab the keys from the Reviewers map, which contains the review PHID's
+	reviewerPHIDs := make([]string, 0, len(revision.Reviewers))
+	for k := range revision.Reviewers {
+		reviewerPHIDs = append(reviewerPHIDs, k)
+	}
+
 	// First, we check that the bot implementation is a Slack bot.
 	if sb, ok := bot.(interfaces.SlackBot); ok {
 		// Lookup the reviewers using the extension.
 		slackMap, err = extensions.PhabulousToSlack(
 			conn,
 			phabulousRequests.PhabulousToSlackRequest{
-				UserPHIDs: revision.Reviewers,
+				UserPHIDs: reviewerPHIDs,
 			},
 		)
 

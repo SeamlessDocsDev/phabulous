@@ -1,6 +1,6 @@
 package requests
 
-import "github.com/etcinit/gonduit/requests"
+import "github.com/seamlessdocsdev/gonduit/requests"
 
 // PhabulousFromSlackRequest represents a requests to phabulous.fromslack.
 type PhabulousFromSlackRequest struct {

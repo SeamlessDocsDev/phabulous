@@ -3,12 +3,12 @@ package extension
 import (
 	"fmt"
 
-	"github.com/etcinit/gonduit"
-	gonduitRequests "github.com/etcinit/gonduit/requests"
-	"github.com/etcinit/phabulous/app/gonduit/extensions"
-	"github.com/etcinit/phabulous/app/gonduit/extensions/requests"
-	"github.com/etcinit/phabulous/app/interfaces"
-	"github.com/etcinit/phabulous/app/messages"
+	"github.com/seamlessdocsdev/gonduit"
+	gonduitRequests "github.com/seamlessdocsdev/gonduit/requests"
+	"github.com/seamlessdocsdev/phabulous/app/gonduit/extensions"
+	"github.com/seamlessdocsdev/phabulous/app/gonduit/extensions/requests"
+	"github.com/seamlessdocsdev/phabulous/app/interfaces"
+	"github.com/seamlessdocsdev/phabulous/app/messages"
 	"github.com/nlopes/slack"
 )
 

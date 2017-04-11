@@ -1,9 +1,9 @@
 package extensions
 
 import (
-	"github.com/etcinit/gonduit"
-	"github.com/etcinit/phabulous/app/gonduit/extensions/requests"
-	"github.com/etcinit/phabulous/app/gonduit/extensions/responses"
+	"github.com/seamlessdocsdev/gonduit"
+	"github.com/seamlessdocsdev/phabulous/app/gonduit/extensions/requests"
+	"github.com/seamlessdocsdev/phabulous/app/gonduit/extensions/responses"
 )
 
 // PhabulousFromSlack performs a call to phabulous.fromslack.

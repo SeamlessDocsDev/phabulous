@@ -1,6 +1,6 @@
 package connectors
 
-import "github.com/etcinit/phabulous/app/interfaces"
+import "github.com/seamlessdocsdev/phabulous/app/interfaces"
 
 // processMessage processes incoming messages events and calls the appropriate
 // handlers.

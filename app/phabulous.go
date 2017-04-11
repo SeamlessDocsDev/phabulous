@@ -3,9 +3,9 @@ package app
 import (
 	"github.com/Sirupsen/logrus"
 	"github.com/codegangsta/cli"
-	"github.com/etcinit/phabulous/app/connectors"
-	"github.com/etcinit/phabulous/app/factories"
-	"github.com/etcinit/phabulous/app/modules"
+	"github.com/seamlessdocsdev/phabulous/app/connectors"
+	"github.com/seamlessdocsdev/phabulous/app/factories"
+	"github.com/seamlessdocsdev/phabulous/app/modules"
 	"github.com/jacobstr/confer"
 )
 

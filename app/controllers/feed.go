@@ -2,11 +2,11 @@ package controllers
 
 import (
 	"github.com/Sirupsen/logrus"
-	"github.com/etcinit/gonduit/constants"
-	"github.com/etcinit/phabulous/app/factories"
-	"github.com/etcinit/phabulous/app/interfaces"
-	"github.com/etcinit/phabulous/app/messages"
-	"github.com/etcinit/phabulous/app/resolvers"
+	"github.com/seamlessdocsdev/gonduit/constants"
+	"github.com/seamlessdocsdev/phabulous/app/factories"
+	"github.com/seamlessdocsdev/phabulous/app/interfaces"
+	"github.com/seamlessdocsdev/phabulous/app/messages"
+	"github.com/seamlessdocsdev/phabulous/app/resolvers"
 	"github.com/gin-gonic/gin"
 	"github.com/jacobstr/confer"
 )
