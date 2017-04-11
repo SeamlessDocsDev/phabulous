@@ -8,11 +8,11 @@ Phabulous is a Slack bot for Phabricator.
 with a rewrite from scratch in Go. The code for the Javascript version is
 available at the **legacy** branch, but it won't be actively maintained.
 
-[![Build Status](https://travis-ci.org/etcinit/phabulous.svg?branch=master)](https://travis-ci.org/etcinit/phabulous)
+[![Build Status](https://travis-ci.org/seamlessdocsdev/phabulous.svg?branch=master)](https://travis-ci.org/seamlessdocsdev/phabulous)
 [![Docker Repository on
-Quay](https://quay.io/repository/etcinit/phabulous/status "Docker Repository on
-Quay")](https://quay.io/repository/etcinit/phabulous) [![Go Report
-Card](https://goreportcard.com/badge/github.com/etcinit/phabulous)](https://goreportcard.com/report/github.com/etcinit/phabulous)
+Quay](https://quay.io/repository/seamlessdocsdev/phabulous/status "Docker Repository on
+Quay")](https://quay.io/repository/seamlessdocsdev/phabulous) [![Go Report
+Card](https://goreportcard.com/badge/github.com/seamlessdocsdev/phabulous)](https://goreportcard.com/report/github.com/seamlessdocsdev/phabulous)
 
 ## Features
 
@@ -25,15 +25,15 @@ Card](https://goreportcard.com/badge/github.com/etcinit/phabulous)](https://gore
 
 ## Guides
 
-- [Getting Started](https://github.com/etcinit/phabulous/wiki/Getting-Started):
+- [Getting Started](https://github.com/seamlessdocsdev/phabulous/wiki/Getting-Started):
 A guide on how to setup Phabulous for the first time.
-- [Upgrade Notes](https://github.com/etcinit/phabulous/wiki/Upgrade-Notes):
+- [Upgrade Notes](https://github.com/seamlessdocsdev/phabulous/wiki/Upgrade-Notes):
 Instructions on how to upgrade to newer versions of Phabulous.
-- [Command Reference](https://github.com/etcinit/phabulous/wiki/Command-Reference):
+- [Command Reference](https://github.com/seamlessdocsdev/phabulous/wiki/Command-Reference):
 Reference for all available bot commands.
-- [Help & Troubleshooting](https://github.com/etcinit/phabulous/wiki/Help-&-Troubleshooting):
+- [Help & Troubleshooting](https://github.com/seamlessdocsdev/phabulous/wiki/Help-&-Troubleshooting):
 Tips and answers to common problems.
-- [Wiki](https://github.com/etcinit/phabulous/wiki): More articles and
+- [Wiki](https://github.com/seamlessdocsdev/phabulous/wiki): More articles and
 information about Phabulous.
 
 ## Compiling from source
@@ -41,12 +41,12 @@ information about Phabulous.
 To compile Phabulous, you need a recent version of Go:
 
 ```
-go get github.com/etcinit/phabulous/cmd/phabulous
+go get github.com/seamlessdocsdev/phabulous/cmd/phabulous
 
 // or, for cross-compiling:
 
 go get github.com/laher/goxc
-git clone git@github.com:etcinit/phabulous.git
+git clone git@github.com:seamlessdocsdev/phabulous.git
 cd phabulous
 go get ./... && go get github.com/stretchr/testify
 make
