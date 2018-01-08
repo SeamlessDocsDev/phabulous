@@ -107,6 +107,7 @@ Loop:
 					"Unable to connect/authenticate with Slack. ",
 					"Check the bot's credentials.",
 				)
+				c.logger.Errorf("Error: %s\n", ev.Error())
 
 			default:
 				// Ignore other events..
